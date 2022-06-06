@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(74, 74, 153);
+}
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(136, 37, 85);
+}
+
+label:hover {
+    transform: scale(1.1);
+    color: rgb(30, 182, 142);
+    transition: all 0.5s ease;
+}
+
+#display_image {
+    width: 400px;
+    height: 300px;
+    box-shadow: 1px 1px 10px #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
