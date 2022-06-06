@@ -1,22 +1,26 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: #000;
 }
+
 div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    width: 100vw;
     height: 100vh;
 }
 
-h1{
+h1 {
+    font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(74, 74, 153);
 }
+
 input {
     display: none;
 }
@@ -24,7 +28,7 @@ input {
 label {
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(136, 37, 85);
+    color: rgb(240, 8, 120);
 }
 
 label:hover {
@@ -34,7 +38,7 @@ label:hover {
 }
 
 #display_image {
-    width: 450px;
+    width: 420px;
     height: 300px;
     box-shadow: 1px 1px 10px #ccc;
     border: 1px solid #ccc;
@@ -43,4 +47,20 @@ label:hover {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+@media (max-width: 492px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #display_image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.2rem;
+    }
 }
